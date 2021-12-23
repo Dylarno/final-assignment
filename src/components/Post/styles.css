@@ -1,0 +1,29 @@
+.player {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    box-shadow: 0 2px 7px #dfdfdf;
+    background: #fafafa;
+}
+
+.player-photo {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.player-name {
+    font-size: 1.3rem;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.player-points, .player-rebounds, .player-assists{
+    color: gray;
+    padding: 5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
