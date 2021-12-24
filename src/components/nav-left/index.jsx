@@ -25,6 +25,9 @@ export const NavLeft = () => {
     
     return (
         
+        // Don't display the navbar elements unless someone is logged in.
+        // Can't do this for the whole div because of styling.
+
         <div className="nav-left">
             {
                 user && <Link to={`/`}>

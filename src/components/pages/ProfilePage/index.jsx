@@ -12,15 +12,15 @@ export const ProfilePage = () => {
 
   const globalState = useContext(GlobalContext);
 
+  // Load the posts from the global state intead of asking Firebase for them again:
   const [posts, setPosts] = useState(globalState.posts);
+
   const { register, handleSubmit } = useForm();
 
   const history = useHistory();
 
   const auth = getAuth();
   const loggedInUser = auth.currentUser.email;
-
-    
 
   useEffect(() => {
       filterPosts();
@@ -52,6 +52,7 @@ export const ProfilePage = () => {
         body: JSON.stringify(newPost)
       });
  
+      // Force navigation to the home page as a quick way to update the global state (so the user can see their new post):
       history.push('/');
  
   }
@@ -80,7 +81,7 @@ export const ProfilePage = () => {
         {
           posts.map( (post) => (
             <Post username={post.username.stringValue} text={post.text.stringValue} ></Post>
-          )).reverse()
+          )).reverse() // Cheap way of putting the user's newest post at the top :P
         }
 
       </div>
