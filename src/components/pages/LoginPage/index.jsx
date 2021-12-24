@@ -47,7 +47,7 @@ export const LoginPage = () => {
 
         try
         {
-            const signUpUser = await createUserWithEmailAndPassword(auth. formVals.user, formVals.password);
+            const signUpUser = await createUserWithEmailAndPassword(auth, formVals.user, formVals.password);
             console.log("New user was created", signUpUser);
             history.push('/');
         }
@@ -63,7 +63,7 @@ export const LoginPage = () => {
             {
                 mode === "login" && (
                     <form className="form-layout" onSubmit={handleSubmit(loginUser)}>
-                        <h2>Welcome back, please sign in!</h2>
+                        <h2 className="login-header">Welcome back, please sign in!</h2>
                         <br />
 
                         <label htmlFor="user">Username</label>
@@ -76,7 +76,7 @@ export const LoginPage = () => {
                         <br />
                         <input type="submit" value="Login"></input>
                         <br />
-                        <p>Don't have an account with us yet? Create a new account with your email and password</p>
+                        <p className="login-prompt">Don't have an account with us yet?</p>
                         <button onClick={() => setMode("signup")}>Sign Up</button>
                     </form>
                 )
@@ -85,7 +85,7 @@ export const LoginPage = () => {
             {
                 mode === "signup" && (
                     <form className="form-layout" onSubmit={handleSubmit(signUpUser)}>
-                        <h2>Create a new account now!</h2>
+                        <h2 className="login-header">Create a new account now!</h2>
                         <br />
 
                         <label htmlFor="user">Email</label>
@@ -102,7 +102,7 @@ export const LoginPage = () => {
                         <br />
                         <input type="submit" value="Sign Up"></input>
                         <br />
-                        <p>Have an account already?</p>
+                        <p className="login-prompt">Have an account already?</p>
                         <button onClick={() => setMode("login")}>Login</button>
                     </form>
                 )

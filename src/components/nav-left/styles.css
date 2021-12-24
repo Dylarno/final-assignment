@@ -1,0 +1,8 @@
+.nav-left {
+    display: block;
+    color: white;
+}
+
+.nav-left > *{
+    padding: 0.5em;
+}

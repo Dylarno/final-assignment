@@ -53,8 +53,12 @@ export const HomePage = () => {
 
   return (
     <div className="home-page">
-      <h1 className="username"> Home </h1>
-      <div className="post-container">
+
+      <div className="header-container">
+        <h1 className="header"> ==== THE .JSX CAFÉ ==== </h1>
+      </div>
+
+      <div className="posts-container">
         {
           posts.map( (post) => (
             <Post username={post.username.stringValue} text={post.text.stringValue} ></Post>

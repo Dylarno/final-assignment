@@ -12,18 +12,28 @@ input {
     font-size: 1.5rem;
     width: 400px;
     margin-bottom: 10px;
+    background: #3a3b3c;
+    color: white;
+    cursor: pointer;
 }
 
 input[type=submit] {
-    background: black;
-    border: none;
+    background: #3a3b3c;
     color: white;
-    cursor: pointer;
 }
 
 button {
     height: 50px;
     font-size: 1.4rem;
-    background: transparent;
+    background: #3a3b3c;
+    color: white;
     cursor: pointer;
+}
+
+.login-header{
+    text-align: center;
+}
+
+.login-prompt{
+    text-align: center;
 }

@@ -1,29 +1,25 @@
-.player {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 1rem;
-    box-shadow: 0 2px 7px #dfdfdf;
-    background: #fafafa;
+.post-container{
+    padding-bottom: 1em;
 }
 
-.player-photo {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 5px;
+.post {
+    padding: 0.8em;
+    border: 0.5px solid white;
+    border-radius: 25px;
+    background: #3a3b3c;
 }
 
-.player-name {
-    font-size: 1.3rem;
-    padding: 5px;
-    text-transform: uppercase;
+.username{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    padding-right: 0.5em;
+    color: white;
 }
 
-.player-points, .player-rebounds, .player-assists{
-    color: gray;
-    padding: 5px;
-    font-size: 0.9rem;
-    text-transform: uppercase;
+.tweet-text {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.9em;
 }
