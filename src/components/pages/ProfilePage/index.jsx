@@ -70,7 +70,7 @@ export const ProfilePage = () => {
           <h2 className="add-post-text">Add a New Post</h2>
 
             <div className="new-post">
-              <textarea className="new-post-text" type="text" rows="5" cols="50" name="text" required {...register('text')} />
+              <textarea className="new-post-text" type="text" rows="5" cols="42" name="text" required {...register('text')} />
             </div>
 
           <input className="send-post" type="submit" value="Post"></input>

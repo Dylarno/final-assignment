@@ -25,6 +25,11 @@
     text-align: center;
 }
 
+.new-post-text{
+    text-align: center;
+    font-size: 12pt;
+}
+
 .posts-container{
     padding-top: 1em;
 }
